@@ -25,10 +25,6 @@ function App() {
     
     const next = [...todos, todoText.current.value ]
     setTodos(next)
-    if(setTodos === next)
-    {
-      console.log('Cannot input same data')
-    }
     localStorage.setItem('todos', JSON.stringify(next))
   }
 
