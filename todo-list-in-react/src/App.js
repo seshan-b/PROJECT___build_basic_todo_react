@@ -22,16 +22,20 @@ function App() {
 
   // Events
   function addTodo(event) {
-    event.preventDefault()
+    
     const next = [...todos, todoText.current.value ]
     setTodos(next)
+    if(setTodos === next)
+    {
+      console.log('Cannot input same data')
+    }
     localStorage.setItem('todos', JSON.stringify(next))
   }
 
   return (
     <div>
       <ul>
-        {todos.map(todo => (<li key={todo}>{todo}</li>))}
+        {todos.map((todo, index) => (<li key={index}>{todo}</li>))}
       </ul>
 
       <form onSubmit={addTodo}>
