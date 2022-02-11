@@ -1,5 +1,3 @@
-# Mark Down .MD Template
-
 # PROJECT Build basic Todo React
 
 ## Build a very basic Todo List in React. Managing state in local storage.
@@ -18,3 +16,6 @@ Start a new React Project `npx create-react-app [MyAppName]`
 and scripts into the app directory. If you do this, you can’t go back!
 
 We suggest that you begin by typing:`cd todo-list-in-react` → `npm start`
+
+
+
